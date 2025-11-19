@@ -1,0 +1,27 @@
+command cmd:
+
+E:\Basic_001\.net>
+
+and
+
+
+E:\Basic_001\.net>dotnet new blazor -o BlazorSample
+
+then
+
+E:\Basic_001\.net>cd BlazorSample
+
+then
+
+E:\Basic_001\.net\BlazorSample>dotnet watch
+
+then goto visual studio
+
+right click to blazorSample -> open terminal
+
+will show powershell 
+
+press ->  dotnet watch
+
+
+

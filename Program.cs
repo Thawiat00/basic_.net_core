@@ -1,14 +1,16 @@
-using BlazorSample.Components;
+﻿using BlazorSample.Components;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+// เพิ่ม Razor Components
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
 
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
+// ตั้งค่า HTTP request pipeline
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Error", createScopeForErrors: true);
@@ -24,4 +26,4 @@ app.MapStaticAssets();
 app.MapRazorComponents<App>()
     .AddInteractiveServerRenderMode();
 
-app.Run();
+app.Run(); // รันแอปพลิเคชัน
